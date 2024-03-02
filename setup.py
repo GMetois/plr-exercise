@@ -4,6 +4,7 @@ from distutils.core import setup
 INSTALL_REQUIRES = [
     "numpy",
     "torch>=1.21",
+    "wandb",
 ]
 setup(
     name="plr_exercise",
