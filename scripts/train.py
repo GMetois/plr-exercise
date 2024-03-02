@@ -6,7 +6,9 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
+import wandb
 
+wandb.login()
 
 class Net(nn.Module):
     def __init__(self):
@@ -80,6 +82,7 @@ def test(model, device, test_loader, epoch):
             test_loss, correct, len(test_loader.dataset), 100.0 * correct / len(test_loader.dataset)
         )
     )
+    wandb.log({"accuracy": 100.0 * correct / len(test_loader.dataset),"loss": test_loss})
 
 
 def main():
@@ -114,6 +117,14 @@ def main():
         device = torch.device("cuda")
     else:
         device = torch.device("cpu")
+
+    run = wandb.init(
+        project = "plr_exercise",
+        config = {
+            "Learning_rate": args.lr,
+            "epochs": args.epochs
+        }
+    )
 
     train_kwargs = {"batch_size": args.batch_size}
     test_kwargs = {"batch_size": args.test_batch_size}
