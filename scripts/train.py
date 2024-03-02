@@ -8,6 +8,8 @@ from torchvision import datasets, transforms
 from torch.optim.lr_scheduler import StepLR
 import wandb
 
+wandb.login()
+
 class Net(nn.Module):
     def __init__(self):
 
@@ -80,6 +82,7 @@ def test(model, device, test_loader, epoch):
             test_loss, correct, len(test_loader.dataset), 100.0 * correct / len(test_loader.dataset)
         )
     )
+    wandb.log({"accuracy": 100.0 * correct / len(test_loader.dataset),"loss": test_loss})
 
 
 def main():

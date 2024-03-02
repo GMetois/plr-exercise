@@ -1,0 +1,241 @@
+2024-03-02 14:48:28,925 INFO    StreamThr :13245 [internal.py:wandb_internal():86] W&B internal server running at pid: 13245, started at: 2024-03-02 14:48:28.925415
+2024-03-02 14:48:28,927 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status
+2024-03-02 14:48:28,929 INFO    WriterThread:13245 [datastore.py:open_for_write():87] open: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/run-5xwal7ot.wandb
+2024-03-02 14:48:28,930 DEBUG   SenderThread:13245 [sender.py:send():382] send: header
+2024-03-02 14:48:28,943 DEBUG   SenderThread:13245 [sender.py:send():382] send: run
+2024-03-02 14:48:29,390 INFO    SenderThread:13245 [dir_watcher.py:__init__():211] watching files in: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files
+2024-03-02 14:48:29,390 INFO    SenderThread:13245 [sender.py:_start_run_threads():1136] run started: 5xwal7ot with start time 1709387308.925393
+2024-03-02 14:48:29,419 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: check_version
+2024-03-02 14:48:29,419 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: check_version
+2024-03-02 14:48:29,549 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: run_start
+2024-03-02 14:48:29,560 DEBUG   HandlerThread:13245 [system_info.py:__init__():27] System info init
+2024-03-02 14:48:29,560 DEBUG   HandlerThread:13245 [system_info.py:__init__():42] System info init done
+2024-03-02 14:48:29,560 INFO    HandlerThread:13245 [system_monitor.py:start():194] Starting system monitor
+2024-03-02 14:48:29,561 INFO    SystemMonitor:13245 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-02 14:48:29,561 INFO    HandlerThread:13245 [system_monitor.py:probe():214] Collecting system info
+2024-03-02 14:48:29,562 INFO    SystemMonitor:13245 [interfaces.py:start():190] Started cpu monitoring
+2024-03-02 14:48:29,562 INFO    SystemMonitor:13245 [interfaces.py:start():190] Started disk monitoring
+2024-03-02 14:48:29,563 INFO    SystemMonitor:13245 [interfaces.py:start():190] Started gpu monitoring
+2024-03-02 14:48:29,563 INFO    SystemMonitor:13245 [interfaces.py:start():190] Started memory monitoring
+2024-03-02 14:48:29,564 INFO    SystemMonitor:13245 [interfaces.py:start():190] Started network monitoring
+2024-03-02 14:48:29,569 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:29,569 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:29,615 DEBUG   HandlerThread:13245 [system_info.py:probe():151] Probing system
+2024-03-02 14:48:29,632 DEBUG   HandlerThread:13245 [system_info.py:_probe_git():136] Probing git
+2024-03-02 14:48:29,656 DEBUG   HandlerThread:13245 [system_info.py:_probe_git():144] Probing git done
+2024-03-02 14:48:29,657 DEBUG   HandlerThread:13245 [system_info.py:probe():199] Probing system done
+2024-03-02 14:48:29,657 DEBUG   HandlerThread:13245 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-97-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2024-03-02T13:48:29.615378', 'startedAt': '2024-03-02T13:48:28.922261', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/scripts/train.py', 'codePathLocal': 'scripts/train.py', 'codePath': 'scripts/train.py', 'git': {'remote': 'https://github.com/GMetois/plr-exercise.git', 'commit': '2365bd18049ec28cd723338af168fe95a3a70f2b'}, 'email': 'gabriel.metois.pro@outlook.fr', 'root': '/home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise', 'host': 'HP-Gabriel', 'username': 'gabriel', 'executable': '/home/gabriel/venv/plr/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2483.513375, 'min': 800.0, 'max': 4100.0}, 'cpu_freq_per_core': [{'current': 2400.0, 'min': 800.0, 'max': 4100.0}, {'current': 2400.0, 'min': 800.0, 'max': 4100.0}, {'current': 2400.0, 'min': 800.0, 'max': 4100.0}, {'current': 2400.0, 'min': 800.0, 'max': 4100.0}, {'current': 1743.025, 'min': 800.0, 'max': 4100.0}, {'current': 2400.0, 'min': 800.0, 'max': 4100.0}, {'current': 2400.0, 'min': 800.0, 'max': 4100.0}, {'current': 2400.0, 'min': 800.0, 'max': 4100.0}], 'disk': {'/': {'total': 457.37369537353516, 'used': 68.9595947265625}}, 'gpu': 'NVIDIA GeForce GTX 1050', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1050', 'memory_total': 3221225472}], 'memory': {'total': 15.46761703491211}}
+2024-03-02 14:48:29,657 INFO    HandlerThread:13245 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-02 14:48:29,657 INFO    HandlerThread:13245 [system_monitor.py:probe():227] Publishing system info
+2024-03-02 14:48:29,658 INFO    HandlerThread:13245 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-02 14:48:29,661 DEBUG   SenderThread:13245 [sender.py:send():382] send: files
+2024-03-02 14:48:29,661 INFO    SenderThread:13245 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-02 14:48:29,665 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-02 14:48:29,665 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: python_packages
+2024-03-02 14:48:29,666 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-02 14:48:29,666 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: stop_status
+2024-03-02 14:48:29,670 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-02 14:48:29,942 DEBUG   SenderThread:13245 [sender.py:send():382] send: telemetry
+2024-03-02 14:48:30,299 INFO    wandb-upload_0:13245 [upload_job.py:push():131] Uploaded file /tmp/tmpnd61arpywandb/m8g4tqme-wandb-metadata.json
+2024-03-02 14:48:30,391 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_created():271] file/dir created: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:30,391 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_created():271] file/dir created: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/requirements.txt
+2024-03-02 14:48:30,391 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_created():271] file/dir created: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/wandb-metadata.json
+2024-03-02 14:48:31,570 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:31,570 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:32,390 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:33,571 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:33,571 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:34,018 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 14:48:34,391 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:35,572 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:35,572 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:36,391 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:37,572 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:37,573 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:38,392 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:39,077 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 14:48:39,573 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:39,573 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:40,392 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:41,574 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:41,574 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:42,298 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-02 14:48:42,298 DEBUG   SenderThread:13245 [sender.py:send():382] send: history
+2024-03-02 14:48:42,299 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: summary_record
+2024-03-02 14:48:42,299 INFO    SenderThread:13245 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-02 14:48:42,393 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:42,393 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_created():271] file/dir created: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/wandb-summary.json
+2024-03-02 14:48:43,575 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:43,575 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:44,173 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 14:48:44,393 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:44,666 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-02 14:48:44,666 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-02 14:48:44,666 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: stop_status
+2024-03-02 14:48:45,576 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:45,576 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:46,394 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:47,577 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:47,577 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:48,394 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:49,198 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 14:48:49,579 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:49,579 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:50,395 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:51,580 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:51,580 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:52,395 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:53,582 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:53,582 ERROR   gpu       :13245 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2024-03-02 14:48:54,114 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-02 14:48:54,115 DEBUG   SenderThread:13245 [sender.py:send():382] send: history
+2024-03-02 14:48:54,115 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: summary_record
+2024-03-02 14:48:54,115 INFO    SenderThread:13245 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-02 14:48:54,118 DEBUG   SenderThread:13245 [sender.py:send():382] send: exit
+2024-03-02 14:48:54,118 INFO    SenderThread:13245 [sender.py:send_exit():589] handling exit code: 0
+2024-03-02 14:48:54,118 INFO    SenderThread:13245 [sender.py:send_exit():591] handling runtime: 24
+2024-03-02 14:48:54,119 INFO    SenderThread:13245 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-02 14:48:54,119 INFO    SenderThread:13245 [sender.py:send_exit():597] send defer
+2024-03-02 14:48:54,119 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,119 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-02 14:48:54,119 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,119 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-02 14:48:54,119 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 1
+2024-03-02 14:48:54,119 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,119 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-02 14:48:54,120 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,120 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-02 14:48:54,120 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 2
+2024-03-02 14:48:54,120 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,120 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-02 14:48:54,120 INFO    HandlerThread:13245 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-02 14:48:54,120 DEBUG   SystemMonitor:13245 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-02 14:48:54,120 DEBUG   SystemMonitor:13245 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-02 14:48:54,120 DEBUG   SystemMonitor:13245 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-02 14:48:54,121 INFO    HandlerThread:13245 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-02 14:48:54,121 INFO    HandlerThread:13245 [interfaces.py:finish():202] Joined disk monitor
+2024-03-02 14:48:54,163 ERROR   gpu       :13245 [interfaces.py:aggregate():161] Failed to serialize metric: division by zero
+2024-03-02 14:48:54,163 INFO    HandlerThread:13245 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-02 14:48:54,163 INFO    HandlerThread:13245 [interfaces.py:finish():202] Joined memory monitor
+2024-03-02 14:48:54,164 INFO    HandlerThread:13245 [interfaces.py:finish():202] Joined network monitor
+2024-03-02 14:48:54,164 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,164 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-02 14:48:54,164 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 3
+2024-03-02 14:48:54,164 DEBUG   SenderThread:13245 [sender.py:send():382] send: stats
+2024-03-02 14:48:54,164 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,164 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-02 14:48:54,165 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,165 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-02 14:48:54,165 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 4
+2024-03-02 14:48:54,165 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,165 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-02 14:48:54,165 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,165 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-02 14:48:54,165 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 5
+2024-03-02 14:48:54,165 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,165 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-02 14:48:54,165 DEBUG   SenderThread:13245 [sender.py:send():382] send: summary
+2024-03-02 14:48:54,166 INFO    SenderThread:13245 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-02 14:48:54,166 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,166 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-02 14:48:54,166 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 6
+2024-03-02 14:48:54,166 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,166 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-02 14:48:54,166 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,167 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-02 14:48:54,170 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 14:48:54,397 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/wandb-summary.json
+2024-03-02 14:48:54,398 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:54,475 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 7
+2024-03-02 14:48:54,476 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:54,476 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-02 14:48:54,477 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:54,477 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-02 14:48:55,119 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 14:48:55,398 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/config.yaml
+2024-03-02 14:48:56,155 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 8
+2024-03-02 14:48:56,155 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 14:48:56,156 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:56,157 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-02 14:48:56,157 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:56,158 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-02 14:48:56,158 INFO    SenderThread:13245 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-02 14:48:56,159 INFO    SenderThread:13245 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-02 14:48:56,177 INFO    SenderThread:13245 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-02 14:48:56,204 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 9
+2024-03-02 14:48:56,205 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:56,205 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-02 14:48:56,205 DEBUG   SenderThread:13245 [sender.py:send():382] send: artifact
+2024-03-02 14:48:56,398 INFO    Thread-12 :13245 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:48:57,122 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 14:48:57,641 INFO    wandb-upload_1:13245 [upload_job.py:push():86] Skipped uploading /home/gabriel/.local/share/wandb/artifacts/staging/tmpmp69w1iy
+2024-03-02 14:48:57,930 INFO    wandb-upload_0:13245 [upload_job.py:push():89] Uploaded file /home/gabriel/.local/share/wandb/artifacts/staging/tmpgj2vgyiw
+2024-03-02 14:48:59,176 INFO    SenderThread:13245 [sender.py:send_artifact():1494] sent artifact job-https___github.com_GMetois_plr-exercise.git_scripts_train.py - {'id': 'QXJ0aWZhY3Q6NzM3NTg5MTQ0', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NDc0NDYyNQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM3NTU4ODcx', 'versionIndex': 0}}}
+2024-03-02 14:48:59,176 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:59,176 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-02 14:48:59,176 INFO    SenderThread:13245 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-02 14:48:59,399 INFO    SenderThread:13245 [dir_watcher.py:finish():388] scan: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files
+2024-03-02 14:48:59,399 INFO    SenderThread:13245 [dir_watcher.py:finish():402] scan save: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/wandb-summary.json wandb-summary.json
+2024-03-02 14:48:59,399 INFO    SenderThread:13245 [dir_watcher.py:finish():402] scan save: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/wandb-metadata.json wandb-metadata.json
+2024-03-02 14:48:59,399 INFO    SenderThread:13245 [dir_watcher.py:finish():402] scan save: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log output.log
+2024-03-02 14:48:59,400 INFO    SenderThread:13245 [dir_watcher.py:finish():402] scan save: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/requirements.txt requirements.txt
+2024-03-02 14:48:59,400 INFO    SenderThread:13245 [dir_watcher.py:finish():402] scan save: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/config.yaml config.yaml
+2024-03-02 14:48:59,400 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 10
+2024-03-02 14:48:59,400 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 14:48:59,400 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:48:59,401 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-02 14:48:59,407 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:48:59,407 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-02 14:48:59,407 INFO    SenderThread:13245 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-02 14:48:59,790 INFO    wandb-upload_1:13245 [upload_job.py:push():131] Uploaded file /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/wandb-summary.json
+2024-03-02 14:48:59,817 INFO    wandb-upload_3:13245 [upload_job.py:push():131] Uploaded file /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/config.yaml
+2024-03-02 14:48:59,831 INFO    wandb-upload_2:13245 [upload_job.py:push():131] Uploaded file /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/requirements.txt
+2024-03-02 14:48:59,843 INFO    wandb-upload_0:13245 [upload_job.py:push():131] Uploaded file /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/files/output.log
+2024-03-02 14:49:00,044 INFO    Thread-11 :13245 [sender.py:transition_state():617] send defer: 11
+2024-03-02 14:49:00,045 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:49:00,045 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-02 14:49:00,046 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:49:00,046 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-02 14:49:00,046 INFO    SenderThread:13245 [file_pusher.py:join():178] waiting for file pusher
+2024-03-02 14:49:00,047 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 12
+2024-03-02 14:49:00,047 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:49:00,048 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-02 14:49:00,048 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: status_report
+2024-03-02 14:49:00,049 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:49:00,049 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-02 14:49:00,049 INFO    SenderThread:13245 [file_stream.py:finish():595] file stream finish called
+2024-03-02 14:49:00,125 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 14:49:00,215 INFO    SenderThread:13245 [file_stream.py:finish():599] file stream finish is done
+2024-03-02 14:49:00,215 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 13
+2024-03-02 14:49:00,215 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 14:49:00,215 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:49:00,215 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-02 14:49:00,215 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:49:00,215 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-02 14:49:00,216 INFO    SenderThread:13245 [sender.py:transition_state():617] send defer: 14
+2024-03-02 14:49:00,216 DEBUG   SenderThread:13245 [sender.py:send():382] send: final
+2024-03-02 14:49:00,216 DEBUG   SenderThread:13245 [sender.py:send():382] send: footer
+2024-03-02 14:49:00,216 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: defer
+2024-03-02 14:49:00,216 INFO    HandlerThread:13245 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-02 14:49:00,216 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: defer
+2024-03-02 14:49:00,216 INFO    SenderThread:13245 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-02 14:49:00,216 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 14:49:00,217 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 14:49:00,217 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-02 14:49:00,217 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: server_info
+2024-03-02 14:49:00,218 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: poll_exit
+2024-03-02 14:49:00,218 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: server_info
+2024-03-02 14:49:00,220 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-02 14:49:00,221 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-02 14:49:00,221 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-02 14:49:00,221 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: job_info
+2024-03-02 14:49:00,363 DEBUG   SenderThread:13245 [sender.py:send_request():409] send_request: job_info
+2024-03-02 14:49:00,363 INFO    MainThread:13245 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-02 14:49:00,363 INFO    MainThread:13245 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-02 14:49:00,363 INFO    MainThread:13245 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-02 14:49:00,364 DEBUG   HandlerThread:13245 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-02 14:49:00,364 INFO    HandlerThread:13245 [handler.py:finish():869] shutting down handler
+2024-03-02 14:49:01,222 INFO    WriterThread:13245 [datastore.py:close():296] close: /home/gabriel/ETH Zürich/Perception and Learning for Robotics/plr-exercise/wandb/run-20240302_144828-5xwal7ot/run-5xwal7ot.wandb
+2024-03-02 14:49:01,363 INFO    SenderThread:13245 [sender.py:finish():1572] shutting down sender
+2024-03-02 14:49:01,363 INFO    SenderThread:13245 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-02 14:49:01,363 INFO    SenderThread:13245 [file_pusher.py:join():178] waiting for file pusher
