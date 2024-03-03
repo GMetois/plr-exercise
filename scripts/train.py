@@ -85,6 +85,8 @@ def test(model, device, test_loader, epoch):
     )
     wandb.log({"accuracy": 100.0 * correct / len(test_loader.dataset),"loss": test_loss})
 
+    return test_loss
+
 
 def main():
     # Training settings
@@ -127,13 +129,22 @@ def main():
             "epochs": args.epochs
         }
     )
+    opt_study = optuna.create_study(direction='minimize')
+    opt_study.optimize(lambda trial: optuna_part(trial, args, use_cuda, device), n_trials=5)
 
+
+
+def optuna_part(trial, args, use_cuda, device):
     train_kwargs = {"batch_size": args.batch_size}
     test_kwargs = {"batch_size": args.test_batch_size}
     if use_cuda:
         cuda_kwargs = {"num_workers": 1, "pin_memory": True, "shuffle": True}
         train_kwargs.update(cuda_kwargs)
         test_kwargs.update(cuda_kwargs)
+
+    optim_lr = trial.suggest_float("lr", 1e-5, 1e-1, log=True)
+    optim_epochs = trial.suggest_int("epoch",0,10)
+    print("Epochs :", optim_epochs, " Lr : ", optim_lr)
 
     transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize((0.1307,), (0.3081,))])
     dataset1 = datasets.MNIST("../data", train=True, download=True, transform=transform)
@@ -142,16 +153,18 @@ def main():
     test_loader = torch.utils.data.DataLoader(dataset2, **test_kwargs)
 
     model = Net().to(device)
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = optim.Adam(model.parameters(), lr=optim_lr)
 
     scheduler = StepLR(optimizer, step_size=1, gamma=args.gamma)
-    for epoch in range(args.epochs):
+    for epoch in range(optim_epochs):
         train(args, model, device, train_loader, optimizer, epoch)
-        test(model, device, test_loader, epoch)
+        test_loss = test(model, device, test_loader, epoch)
         scheduler.step()
 
     if args.save_model:
         torch.save(model.state_dict(), "mnist_cnn.pt")
+
+    return test_loss
 
 
 if __name__ == "__main__":
