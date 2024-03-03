@@ -12,6 +12,9 @@ import optuna
 wandb.login()
 
 class Net(nn.Module):
+    """
+    Model of Currently used neural network.
+    """
     def __init__(self):
 
         super(Net, self).__init__()
@@ -39,6 +42,20 @@ class Net(nn.Module):
 
 
 def train(args, model, device, train_loader, optimizer, epoch):
+    """
+    Training function for the NN
+
+    Inputs :
+    - Args : parser args
+    - Model : NN model to train
+    - Device : Device for training
+    - Train_Loader : Train Loader chosen
+    - Optimizer : Optimizer chosen
+    - Epoch : Current epoch
+
+    Output :
+    - Nothing
+    """
     model.train()
     for batch_idx, (data, target) in enumerate(train_loader):
 
@@ -62,7 +79,18 @@ def train(args, model, device, train_loader, optimizer, epoch):
                 break
 
 
-def test(model, device, test_loader, epoch):
+def test(model, device, test_loader):
+    """
+    Training function for the NN
+
+    Inputs :
+    - Model : NN model to train
+    - Device : Device for training
+    - Test_Loader : Test Loader chosen
+
+    Output :
+    - Nothing
+    """
     model.eval()
     test_loss = 0
     correct = 0
@@ -89,6 +117,15 @@ def test(model, device, test_loader, epoch):
 
 
 def main():
+    """
+    Main Function
+
+    -Parses the command line arguments
+    -Sets up device
+    -Run WandB init
+    -Sets up Optuna Config
+    -Launches the Optuna loop
+    """
     # Training settings
     parser = argparse.ArgumentParser(description="PyTorch MNIST Example")
     parser.add_argument(
@@ -135,6 +172,18 @@ def main():
 
 
 def optuna_part(trial, args, use_cuda, device):
+    """
+    Part that Optuna loops on to find hyperparameters
+
+    Inputs :
+    -Trial : Optuna metavariable for tracking along the studies
+    -Args : Parsed command line arguments
+    -Use_cuda : Boolean for CUDA use or not
+    -Device : Device for CUDA use if any
+
+    Outputs :
+    -Test_loss : Test loss is returned for Optuna Study.
+    """
     train_kwargs = {"batch_size": args.batch_size}
     test_kwargs = {"batch_size": args.test_batch_size}
     if use_cuda:
@@ -168,4 +217,7 @@ def optuna_part(trial, args, use_cuda, device):
 
 
 if __name__ == "__main__":
+    """
+    Main function on launch
+    """
     main()
